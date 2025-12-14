@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Coremis - CFO as a Service für Schweizer KMU. Wir übernehmen die CFO Rolle dort, wo Transparenz fehlt. Unabhängig, pragmatisch und mit messbarer Wirkung."
+    />
+    <title>Coremis | CFO as a Service Schweiz</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Coremis | CFO as a Service Schweiz" />
+    <meta
+      property="og:description"
+      content="Finanzführung, die Entscheidungen beschleunigt. Für Eigentümer, CEOs und Verwaltungsräte."
+    />
+    <!-- Open Graph Image -->
+    <meta property="og:image" content="https://i.postimg.cc/64LyFDMF/logo.png" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Coremis",
+      "image": "https://i.postimg.cc/64LyFDMF/logo.png",
+      "description": "CFO as a Service für Schweizer KMU. Finanzführung, Reporting und Liquiditätsplanung.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Zürich",
+        "addressRegion": "ZH",
+        "addressCountry": "CH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "47.3769",
+        "longitude": "8.5417"
+      },
+      "url": "https://coremis.ch",
+      "telephone": "+41440000000",
+      "priceRange": "$$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                black: '#0f172a',
+                orange: '#FF5500',
+                gray: '#F8FAFC',
+                border: '#E2E8F0',
+                darkblue: '#0B1120',
+              }
+            },
+            boxShadow: {
+              'glow': '0 0 20px rgba(255, 85, 0, 0.4)',
+              'glow-hover': '0 0 35px rgba(255, 85, 0, 0.6)',
+              'card': '0 10px 30px -10px rgba(0,0,0,0.05)',
+            },
+            letterSpacing: {
+              tighter: '-0.04em',
+              tight: '-0.02em',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'shimmer': 'shimmer 2.5s linear infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'draw-line': 'drawLine 1.5s ease-out forwards',
+              'scroll': 'scroll 60s linear infinite', 
+              'gradient-x': 'gradient-x 3s ease infinite',
+              'text-reveal': 'text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              shimmer: {
+                '0%': { backgroundPosition: '-200% 0' },
+                '100%': { backgroundPosition: '200% 0' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              drawLine: {
+                '0%': { height: '0%' },
+                '100%': { height: '100%' },
+              },
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+              'gradient-x': {
+                '0%, 100%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'left center'
+                },
+                '50%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'right center'
+                },
+              },
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      /* Lenis Recommended CSS */
+      html.lenis {
+        height: auto;
+      }
+      .lenis.lenis-smooth {
+        scroll-behavior: auto;
+      }
+      .lenis.lenis-smooth [data-lenis-prevent] {
+        overscroll-behavior: contain;
+      }
+      .lenis.lenis-stopped {
+        overflow: hidden;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fff;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+
+      ::selection {
+        background: #FF5500;
+        color: white;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+
+    <!-- Iconify Icon Web Component -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+    <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@0.395.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react": "https://esm.sh/react@18.2.0",
+    "@google/genai": "https://esm.sh/@google/genai@0.1.2",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+  </head>
+
+  <body class="antialiased text-slate-900 bg-white">
+    <div id="root"></div>
+
+    <script>
+      // Global Intersection Observer for Scroll Reveals
+      document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              observer.unobserve(entry.target); // Run once
+            }
+          });
+        }, observerOptions);
+
+        window.observeReveals = () => {
+          document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+          });
+        };
+        
+        window.observeReveals();
+        
+        const mutationObserver = new MutationObserver(() => {
+           window.observeReveals();
+        });
+        mutationObserver.observe(document.body, { childList: true, subtree: true });
+      });
+    </script>
+  </body>
+</html>
